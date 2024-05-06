@@ -1,0 +1,197 @@
+body {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.ocultado a {
+    display: none;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    background: #000000;
+    margin-bottom: 0px;
+}
+.logo {
+    display: flex; 
+}
+.logo imglogo {
+    width: auto;
+    height: 200px;  
+}
+.imglogo2 {
+    width: 65px;
+    height: 65px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    
+}
+nav ul {
+    display: flex;
+}  
+nav a {
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #847e7e;
+    border-radius: 10px;
+} 
+nav a:hover {
+    background-color: #dd0d09;
+    color: #FFFFFF;
+}
+.efeito_bonito a {
+    font-size: 17px;
+    background-color: #9f0800d9;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.gif {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    filter: grayscale(10%);
+    margin-bottom: 0px;
+}
+#sobre {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #000000 85%, #9f0800d9);
+}
+#personagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: #000000;
+}
+
+h1 {
+    font-size: 30px;
+}
+section  {
+    display: flex;
+}
+section div img {
+    width: 350;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+section h1 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+h2 {
+    background-color: #dd0d09;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    
+}
+section div h3, p {
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+footer p {
+    font-size: 13px;
+    color:#9b9a9a;
+}
+section div {
+    text-align: center;
+}
+section div p {
+    color: #847e7e
+}
+h3 {
+    border-bottom: 2px solid #dd0d09;
+}
+@media screen and (max-width: 768px) {
+    .menu nav ul {
+        display: none; /* Oculta a lista de navegação em telas menores */
+    }
+    header .ocultado a {
+        display: flex;
+        background-color: #dd0d09;
+        border-radius: 30px;
+        font-size: 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color:#FFFFFF;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Define a altura do cabeçalho como 100% da altura da tela */
+        flex-direction: column; /* Define a direção do fluxo como coluna */
+    }
+
+    .logo {
+        width: 300px; /* Ajusta o tamanho da logo */
+        height: 200px; /* Permite que a altura da logo seja ajustada automaticamente */
+        flex-direction: column;
+    }
+
+    .menu nav ul,
+    .efeito_bonito a {
+        display: block; /* Exibe os itens um abaixo do outro */
+        margin: 10px 0; /* Adiciona espaço entre os itens */
+    }
+
+    .menu nav li {
+        display: none; /* Oculta a logo e as li do menu em telas menores */
+    }
+
+    #sobre, #personagens {
+        display: flex;
+        flex-direction: column; /* Define a direção do fluxo como coluna */
+        align-items: center; /* Alinha os itens ao centro na direção transversal */
+    }
+
+    #personagens div {
+        margin-bottom: 20px; /* Adiciona espaço entre os itens na coluna */
+    }
+    header .menu .imglogo2 {
+        width: 80px;
+        height: 80px;
+        flex-direction: column;
+    }
+}
