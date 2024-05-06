@@ -165,8 +165,9 @@ h3 {
     }
 
     .logo {
-        width: 300px; /* Ajusta o tamanho da logo */
-        height: 200px; /* Permite que a altura da logo seja ajustada automaticamente */
+        margin-top: 150px;
+        width: 500px; /* Ajusta o tamanho da logo */
+        height: 400px; /* Permite que a altura da logo seja ajustada automaticamente */
         flex-direction: column;
     }
 
